@@ -1,7 +1,7 @@
 /* stylelint-disable stylistic/selector-list-comma-newline-after */
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: 'Varela Round', sans-serif;/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2.25rem;
 }
 
@@ -10,7 +10,26 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: 'Varela Round', sans-serif;/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+
+li {
+  font-family: 'Varela Round', sans-serif;
+}
+a {
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  font-family: 'Varela Round', sans-serif;
+  color: gray;
+  text-decoration: underline;
+  transition: 0.1s;
 }
 
 .flex-auto {
