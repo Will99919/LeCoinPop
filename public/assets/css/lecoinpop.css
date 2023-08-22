@@ -1,5 +1,8 @@
+html{
+    padding: 20px;
+}
 body {
-    position: relative;
+    position: relative; 
 }
 
 h1, p{

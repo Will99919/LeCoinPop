@@ -1,12 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Le Coin Pop{% endblock %}
+{% block title %}Le Coin Pop - Nous contacter{% endblock %}
 
 {% block content %}
 <br>
     <h1>Mon compte</h1> 
     <p>Bienvenue {{ app.user.firstname }} dans votre espace personnelle</p>
-    <hr>
     <hr>
 <div class="row">
     <div class="col-md-6">
@@ -26,9 +25,7 @@
     {% endif %}
 </div>
 
-    
-
-    <p class="mb-3 mt-3 p-5 bouton-deco">Pour se déconnecter c'est ici : <a class="btn btn-sm btn-outline-danger" href="{{ path('app_logout') }}"> Déconnexion</a></p>
+    <p class="mb-3 mt-3 p-5 bouton-deco">Pour se déconnecter c'est ici :&nbsp; <a class="btn btn-sm btn-outline-danger" href="{{ path('app_logout') }}"> Déconnexion</a></p>
     <div style="display: flex; justify-content: center;"><img src="{{ asset('assets/img/toystory.jpg')}}" style="width: 250px;"/></div>
 
 {% endblock %}
