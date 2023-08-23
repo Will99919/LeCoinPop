@@ -86,14 +86,15 @@ class __TwigTemplate_3c936be6090bfa4f03957365d7a4a14b extends Template
 
         // line 6
         echo "
-<h2>Nous contacter</h2>
-    <p>N'hésiter pas à prendre contact avec notre équipe, nous vous répondrons dasn les meilleurs délais.</p>
+<h2 class=\"d-flex justify-content-center mb-5\">Nous contacter</h2>
+    <p class=\"mb-5\"><b>N'hésiter pas à prendre contact avec notre équipe, nous vous répondrons dasn les meilleurs délais.</b></p>
+
      ";
-        // line 9
+        // line 10
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 9, $this->source); })()), "flashes", ["notice"], "method", false, false, false, 9));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 10, $this->source); })()), "flashes", ["notice"], "method", false, false, false, 10));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 10
+            // line 11
             echo "            <div class=\"alert alert-info\"> ";
             echo twig_escape_filter($this->env, $context["message"], "html", null, true);
             echo " </div>
@@ -102,11 +103,11 @@ class __TwigTemplate_3c936be6090bfa4f03957365d7a4a14b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 12
-        echo "    <div class =\"row\">
-        <div class=\"col-md-8\">";
         // line 13
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 13, $this->source); })()), 'form');
+        echo "    <div class =\"row\" id=\"contact\">
+        <div class=\"col-md-8\">";
+        // line 14
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 14, $this->source); })()), 'form');
         echo "</div>
         <div class=\"col-md-4\">
             <strong>Le coin Pop</strong>
@@ -138,7 +139,7 @@ class __TwigTemplate_3c936be6090bfa4f03957365d7a4a14b extends Template
 
     public function getDebugInfo()
     {
-        return array (  109 => 13,  106 => 12,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  110 => 14,  107 => 13,  98 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -149,12 +150,13 @@ class __TwigTemplate_3c936be6090bfa4f03957365d7a4a14b extends Template
 
 {% block content %}
 
-<h2>Nous contacter</h2>
-    <p>N'hésiter pas à prendre contact avec notre équipe, nous vous répondrons dasn les meilleurs délais.</p>
+<h2 class=\"d-flex justify-content-center mb-5\">Nous contacter</h2>
+    <p class=\"mb-5\"><b>N'hésiter pas à prendre contact avec notre équipe, nous vous répondrons dasn les meilleurs délais.</b></p>
+
      {% for message in app.flashes('notice') %}
             <div class=\"alert alert-info\"> {{ message }} </div>
         {% endfor %}
-    <div class =\"row\">
+    <div class =\"row\" id=\"contact\">
         <div class=\"col-md-8\">{{ form(form) }}</div>
         <div class=\"col-md-4\">
             <strong>Le coin Pop</strong>

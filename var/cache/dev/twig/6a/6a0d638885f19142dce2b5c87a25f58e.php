@@ -86,34 +86,33 @@ class __TwigTemplate_7b66cc7288e1b948cba6b9ec6b33c3d0 extends Template
 
         // line 6
         echo "<br>
-    <h1>Mon compte</h1> 
-    <p>Bienvenue ";
+    <h1 class=\"mb-5\">Mon compte</h1> 
+    <p class=\"mb-3\">Bienvenue <strong>&thinsp; ";
         // line 8
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 8, $this->source); })()), "user", [], "any", false, false, false, 8), "firstname", [], "any", false, false, false, 8), "html", null, true);
-        echo " dans votre espace personnelle</p>
-    <hr>
+        echo " &thinsp;</strong> dans votre espace personnelle</p>
 <div class=\"row\">
     <div class=\"col-md-6\">
         <div class=\"account-item text-center\">
             <img src=\"";
-        // line 13
+        // line 12
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/password.png"), "html", null, true);
         echo "\"><br><br>
             <a href=\"";
-        // line 14
+        // line 13
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account_password");
         echo "\">Modifier mon mot de passe</a><br>
         </div>
     </div>
 
     ";
-        // line 18
+        // line 17
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 19
+            // line 18
             echo "      <div class=\"col-md-6\">
         <div class=\"account-item text-center\">
             <img src=\"";
-            // line 21
+            // line 20
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/security.png"), "html", null, true);
             echo "\"><br><br>
             <a href=\"/admin\">Administrateur backoffice</a> <br>
@@ -121,15 +120,15 @@ class __TwigTemplate_7b66cc7288e1b948cba6b9ec6b33c3d0 extends Template
       </div>
     ";
         }
-        // line 26
+        // line 25
         echo "</div>
 
     <p class=\"mb-3 mt-3 p-5 bouton-deco\">Pour se déconnecter c'est ici :&nbsp; <a class=\"btn btn-sm btn-outline-danger\" href=\"";
-        // line 28
+        // line 27
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
         echo "\"> Déconnexion</a></p>
     <div style=\"display: flex; justify-content: center;\"><img src=\"";
-        // line 29
+        // line 28
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/img/toystory.jpg"), "html", null, true);
         echo "\" style=\"width: 250px;\"/></div>
 
@@ -154,7 +153,7 @@ class __TwigTemplate_7b66cc7288e1b948cba6b9ec6b33c3d0 extends Template
 
     public function getDebugInfo()
     {
-        return array (  133 => 29,  129 => 28,  125 => 26,  117 => 21,  113 => 19,  111 => 18,  104 => 14,  100 => 13,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  132 => 28,  128 => 27,  124 => 25,  116 => 20,  112 => 18,  110 => 17,  103 => 13,  99 => 12,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -165,9 +164,8 @@ class __TwigTemplate_7b66cc7288e1b948cba6b9ec6b33c3d0 extends Template
 
 {% block content %}
 <br>
-    <h1>Mon compte</h1> 
-    <p>Bienvenue {{ app.user.firstname }} dans votre espace personnelle</p>
-    <hr>
+    <h1 class=\"mb-5\">Mon compte</h1> 
+    <p class=\"mb-3\">Bienvenue <strong>&thinsp; {{ app.user.firstname }} &thinsp;</strong> dans votre espace personnelle</p>
 <div class=\"row\">
     <div class=\"col-md-6\">
         <div class=\"account-item text-center\">

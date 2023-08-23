@@ -169,41 +169,6 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
       </symbol>
     </svg>
 
-    <div class=\"dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle\">
-      <button class=\"btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center\"
-              id=\"bd-theme\"
-              type=\"button\"
-              aria-expanded=\"false\"
-              data-bs-toggle=\"dropdown\"
-              aria-label=\"Toggle theme (auto)\">
-        <svg class=\"bi my-1 theme-icon-active\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>
-        <span class=\"visually-hidden\" id=\"bd-theme-text\">Toggle theme</span>
-      </button>
-      <ul class=\"dropdown-menu dropdown-menu-end shadow\" aria-labelledby=\"bd-theme-text\">
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"light\" aria-pressed=\"false\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#sun-fill\"></use></svg>
-            Light
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"dark\" aria-pressed=\"false\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#moon-stars-fill\"></use></svg>
-            Dark
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center active\" data-bs-theme-value=\"auto\" aria-pressed=\"true\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>
-            Auto
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
     
 <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"d-none\">
   <symbol id=\"aperture\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" viewBox=\"0 0 24 24\">
@@ -223,13 +188,13 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
     <div class=\"row flex-nowrap justify-content-between align-items-center\">
       <div class=\"col-4 pt-1\">
         <a class=\"link-secondary\" href=\"";
-        // line 169
+        // line 134
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("register");
         echo "\">S'inscrire</a>
       </div>
       <div class=\"col-4 text-center\">
         <a class=\"blog-header-logo text-body-emphasis text-decoration-none\" href=\"";
-        // line 172
+        // line 137
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\">LE COIN POP</a>
       </div>
@@ -237,23 +202,23 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
 
       <div class=\"navbar-item-custom\">
         ";
-        // line 177
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 177, $this->source); })()), "user", [], "any", false, false, false, 177)) {
-            // line 178
+        // line 142
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 142, $this->source); })()), "user", [], "any", false, false, false, 142)) {
+            // line 143
             echo "          <a class=\"btn btn-sm btn-outline-secondary\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("account");
             echo "\">Mon compte <small>(";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 178, $this->source); })()), "user", [], "any", false, false, false, 178), "firstname", [], "any", false, false, false, 178), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 143, $this->source); })()), "user", [], "any", false, false, false, 143), "firstname", [], "any", false, false, false, 143), "html", null, true);
             echo ")</small></a> 
       ";
         } else {
-            // line 180
+            // line 145
             echo "          <a class=\"btn btn-sm btn-outline-secondary\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Se connecter</a>
       ";
         }
-        // line 182
+        // line 147
         echo "      </div>
             
       </div>
@@ -263,19 +228,19 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
   <div class=\"nav-scroller py-1 mb-3 border-bottom \">
     <nav class=\"nav nav-underline justify-content-evenly\">
       <a class=\"nav-item nav-link link-body-emphasis active\" href=\"";
-        // line 190
+        // line 155
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("news");
         echo "\">News</a>
       <a class=\"nav-item nav-link link-body-emphasis\" href=\"";
-        // line 191
+        // line 156
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("film");
         echo "\">Films</a>
       <a class=\"nav-item nav-link link-body-emphasis\" href=\"";
-        // line 192
+        // line 157
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("serie");
         echo "\">Séries</a>
       <a class=\"nav-item nav-link link-body-emphasis\" href=\"";
-        // line 193
+        // line 158
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
         echo "\">Contact</a>
     </nav>
@@ -283,9 +248,9 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
 </div>
 
 ";
-        // line 198
+        // line 163
         $this->displayBlock('content', $context, $blocks);
-        // line 200
+        // line 165
         echo "
 <footer class=\"py-5 text-center text-body-secondary footer-custom\">
   <p>Le coin pop - Le site des passionnés de cinéma.</p><br>
@@ -295,7 +260,7 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
   </p>
 </footer>
 <script src=\"";
-        // line 208
+        // line 173
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
 
@@ -329,7 +294,7 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
 
     }
 
-    // line 198
+    // line 163
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -359,7 +324,7 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
 
     public function getDebugInfo()
     {
-        return array (  333 => 198,  314 => 8,  299 => 208,  289 => 200,  287 => 198,  279 => 193,  275 => 192,  271 => 191,  267 => 190,  257 => 182,  251 => 180,  243 => 178,  241 => 177,  233 => 172,  227 => 169,  152 => 97,  69 => 17,  65 => 16,  54 => 8,  45 => 1,);
+        return array (  298 => 163,  279 => 8,  264 => 173,  254 => 165,  252 => 163,  244 => 158,  240 => 157,  236 => 156,  232 => 155,  222 => 147,  216 => 145,  208 => 143,  206 => 142,  198 => 137,  192 => 134,  152 => 97,  69 => 17,  65 => 16,  54 => 8,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -478,41 +443,6 @@ class __TwigTemplate_e4ac585eab0f1aaeb3d0faf74b6c35d1 extends Template
         <path d=\"M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z\"/>
       </symbol>
     </svg>
-
-    <div class=\"dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle\">
-      <button class=\"btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center\"
-              id=\"bd-theme\"
-              type=\"button\"
-              aria-expanded=\"false\"
-              data-bs-toggle=\"dropdown\"
-              aria-label=\"Toggle theme (auto)\">
-        <svg class=\"bi my-1 theme-icon-active\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>
-        <span class=\"visually-hidden\" id=\"bd-theme-text\">Toggle theme</span>
-      </button>
-      <ul class=\"dropdown-menu dropdown-menu-end shadow\" aria-labelledby=\"bd-theme-text\">
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"light\" aria-pressed=\"false\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#sun-fill\"></use></svg>
-            Light
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center\" data-bs-theme-value=\"dark\" aria-pressed=\"false\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#moon-stars-fill\"></use></svg>
-            Dark
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type=\"button\" class=\"dropdown-item d-flex align-items-center active\" data-bs-theme-value=\"auto\" aria-pressed=\"true\">
-            <svg class=\"bi me-2 opacity-50 theme-icon\" width=\"1em\" height=\"1em\"><use href=\"#circle-half\"></use></svg>
-            Auto
-            <svg class=\"bi ms-auto d-none\" width=\"1em\" height=\"1em\"><use href=\"#check2\"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div>
 
     
 <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"d-none\">
